@@ -1,0 +1,43 @@
+# ─── secrets ────────────────────────────────
+.env
+.env.*
+!.env.example
+*.key
+credentials.json
+
+# ─── data (contains employer names, addresses, coordinates) ───
+data/raw/
+data/quarantine/
+data/*.csv
+data/*.xlsx
+data/*.xls
+data/cache.json
+eval/partial_results.json
+!data/README.md
+
+# ─── python ─────────────────────────────────
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ─── node / frontend ────────────────────────
+node_modules/
+frontend/dist/
+frontend/.vite/
+npm-debug.log*
+
+# ─── editors / os ───────────────────────────
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+
+# ─── build output ───────────────────────────
+dist/
+build/
+*.log
